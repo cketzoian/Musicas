@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mis Músicas "Carlos Ketzoian(Capi)</title>
+<title>Mis Músicas</title>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -13,38 +13,42 @@
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
+    margin: 0;
   }
   h1 {
     margin-bottom: 30px;
     color: #ffffff;
   }
-  ul {
-    list-style: none;
-    padding: 0;
+  .track-list {
     width: 100%;
-    max-width: 500px;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
   }
-  li {
+  .track {
     background: #1e1e1e;
-    margin-bottom: 12px;
-    border-radius: 8px;
-    overflow: hidden;
+    border-radius: 10px;
+    padding: 16px 20px;
   }
-  a {
+  .track-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 20px;
-    color: #f0f0f0;
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+  .track-title a {
+    color: #aaaaaa;
     text-decoration: none;
-    font-size: 16px;
-    transition: background 0.2s;
+    font-size: 14px;
   }
-  a:hover {
-    background: #2a2a2a;
+  .track-title a:hover {
+    color: #ffffff;
   }
-  .icon {
-    font-size: 18px;
+  audio {
+    width: 100%;
+    height: 36px;
   }
 </style>
 </head>
@@ -52,15 +56,64 @@
 
 <h1>🎵 Mis Músicas</h1>
 
-<ul>
-  <li><a href="https://raw.githubusercontent.com/cketzoian/Musicas/main/De-Febrero.mp3" download>De Febrero <span class="icon">⬇️</span></a></li>
-  <li><a href="https://raw.githubusercontent.com/cketzoian/Musicas/main/Claves.mp3" download>Claves <span class="icon">⬇️</span></a></li>
-  <li><a href="https://raw.githubusercontent.com/cketzoian/Musicas/main/Elsur.mp3" download>El Sur <span class="icon">⬇️</span></a></li>
-  <li><a href="https://raw.githubusercontent.com/cketzoian/Musicas/main/Nights.mp3" download>Nights <span class="icon">⬇️</span></a></li>
-  <li><a href="https://raw.githubusercontent.com/cketzoian/Musicas/main/odisea.mp3" download>Odisea <span class="icon">⬇️</span></a></li>
-  <li><a href="https://raw.githubusercontent.com/cketzoian/Musicas/main/yovengoaofrecer.mp3" download>YoVengo <span class="icon">⬇️</span></a></li>
-  
-</ul>
+<div class="track-list">
+
+  <div class="track">
+    <div class="track-title">
+      <span>De Febrero</span>
+      <a href="https://raw.githubusercontent.com/cketzoian/Musicas/main/De-Febrero.mp3" download>⬇️ Descargar</a>
+    </div>
+    <audio controls preload="none">
+      <source src="https://raw.githubusercontent.com/cketzoian/Musicas/main/De-Febrero.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </div>
+
+  <div class="track">
+    <div class="track-title">
+      <span>Claves</span>
+      <a href="https://raw.githubusercontent.com/cketzoian/Musicas/main/Claves.mp3" download>⬇️ Descargar</a>
+    </div>
+    <audio controls preload="none">
+      <source src="https://raw.githubusercontent.com/cketzoian/Musicas/main/Claves.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </div>
+
+  <div class="track">
+    <div class="track-title">
+      <span>El Sur</span>
+      <a href="https://raw.githubusercontent.com/cketzoian/Musicas/main/Elsur.mp3" download>⬇️ Descargar</a>
+    </div>
+    <audio controls preload="none">
+      <source src="https://raw.githubusercontent.com/cketzoian/Musicas/main/Elsur.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </div>
+
+  <div class="track">
+    <div class="track-title">
+      <span>Nights</span>
+      <a href="https://raw.githubusercontent.com/cketzoian/Musicas/main/Nights.mp3" download>⬇️ Descargar</a>
+    </div>
+    <audio controls preload="none">
+      <source src="https://raw.githubusercontent.com/cketzoian/Musicas/main/Nights.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </div>
+
+  <div class="track">
+    <div class="track-title">
+      <span>Odisea</span>
+      <a href="https://raw.githubusercontent.com/cketzoian/Musicas/main/odisea.mp3" download>⬇️ Descargar</a>
+    </div>
+    <audio controls preload="none">
+      <source src="https://raw.githubusercontent.com/cketzoian/Musicas/main/odisea.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </div>
+
+</div>
 
 </body>
 </html>
